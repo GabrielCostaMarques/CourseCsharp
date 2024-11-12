@@ -1,31 +1,35 @@
 ﻿using System;
-using System.Globalization;
-namespace CourseCsharp
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CourseCsharp.codeExercicies
 {
-    class Program
+    internal class Oldest
     {
-        static void Main(string[] args)
+        public void OldestCode()
         {
             Person person1 = new Person();
             Person person2 = new Person();
 
-            // Coletando dados da primeira pessoa
+           
             Console.WriteLine("Dados da primeira pessoa: ");
             Console.Write("Nome: ");
             person1.Name = Console.ReadLine();
-            Console.Write("Salário: ");
-            person1.Salary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Ano de nascimento: ");
+            person1.Year = int.Parse(Console.ReadLine());
 
-            // Coletando dados da segunda pessoa
+            
             Console.WriteLine("Dados da segunda pessoa: ");
             Console.Write("Nome: ");
             person2.Name = Console.ReadLine();
-            Console.Write("Salário: ");
-            person2.Salary = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            Console.Write("Ano de nascimento: ");
+            person2.Year = int.Parse(Console.ReadLine());
 
             // Instanciando a classe para fazer a comparação
             Person calculator = new Person();
-            calculator.CalculateAverageSalary(person1, person2);
+            calculator.CalculateOldest(person1, person2);
         }
     }
 }

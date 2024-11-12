@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Globalization;
-namespace CourseCsharp
+
+
+namespace CourseCsharp.codeExercicies
 {
-    class Program
+    internal class AverageSalary
     {
-        static void Main(string[] args)
+        public AverageSalary()
         {
             Person person1 = new Person();
             Person person2 = new Person();
@@ -21,7 +23,7 @@ namespace CourseCsharp
             Console.Write("Nome: ");
             person2.Name = Console.ReadLine();
             Console.Write("Salário: ");
-            person2.Salary = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            person2.Salary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             // Instanciando a classe para fazer a comparação
             Person calculator = new Person();
