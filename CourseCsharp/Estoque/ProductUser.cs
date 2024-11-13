@@ -12,6 +12,7 @@ namespace CourseCsharp.Estoque
         ProductModel p = new ProductModel();
 
         public void ProductShow() {
+            
             Console.WriteLine("Entre os dados do produto");
             Console.WriteLine("Nome: ");
             p.Name = Console.ReadLine();

@@ -1,16 +1,18 @@
-﻿using CourseCsharp.Estoque;
-using System;
-using System.Globalization;
-namespace CourseCsharp
+﻿
+
+
+using CourseCsharp.Employee;
+
+namespace CourseCsharp.Rectangle
 {
     class Program
     {
         static void Main(string[] args)
         {
 
-            ProductUser product = new ProductUser();
+            EmployeeUser user = new EmployeeUser();
 
-            product.ProductShow();
+            user.EmployeeShow();
         }
     }
 }
