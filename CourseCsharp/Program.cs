@@ -2,6 +2,7 @@
 
 
 using CourseCsharp.Employee;
+using CourseCsharp.School;
 
 namespace CourseCsharp.Rectangle
 {
@@ -10,9 +11,9 @@ namespace CourseCsharp.Rectangle
         static void Main(string[] args)
         {
 
-            EmployeeUser user = new EmployeeUser();
+            ClassUser user = new ClassUser();
 
-            user.EmployeeShow();
+            user.StudentShow();
         }
     }
 }
