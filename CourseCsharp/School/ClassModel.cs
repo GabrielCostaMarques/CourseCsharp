@@ -19,7 +19,7 @@ namespace CourseCsharp.School
         public bool Decision(double grade)
         {
 
-            if (grade > 60)
+            if (grade >= 60)
             {
                 return true;
             }
