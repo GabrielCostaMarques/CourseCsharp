@@ -9,37 +9,15 @@ namespace CourseCsharp.Estoque
 {
     internal class ProductUser
     {
-        ProductModel p = new ProductModel();
-
+                
         public void ProductShow() {
-            
-            Console.WriteLine("Entre os dados do produto");
-            Console.WriteLine("Nome: ");
-            p.Name = Console.ReadLine();
 
-            Console.WriteLine("Preço: ");
-            p.Price= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+           ProductModel product = new ProductModel("TV",500.00,10);
 
-            Console.WriteLine("Quantidade no estoque: ");
-            p.Quantity = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Dados do Produto: "+p);
-
-            Console.WriteLine();
-            Console.Write("Digite o numero de produtos a ser adicionados no estoque: ");
-            
-            int qty= int.Parse(Console.ReadLine());  
-            p.AddProduct(qty);
-            Console.WriteLine();
-            Console.WriteLine("Dados Atualizados: "+p);
-
-            Console.WriteLine();
-            Console.Write("Digite o numero de produtos a ser removidos no estoque: ");
-
-            qty= int.Parse(Console.ReadLine());
-            p.RemoveProduct(qty);
-            Console.WriteLine();
-            Console.WriteLine("Dados Atualizados: "+p);
+            product.Name ="T";
+            Console.WriteLine(product.Name);
+            Console.WriteLine(product.Quantity) ;
+            Console.WriteLine(product.Price) ;
         }
     }
 }
