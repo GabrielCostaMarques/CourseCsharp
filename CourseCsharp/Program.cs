@@ -2,19 +2,22 @@
 
 
 using CourseCsharp.Estoque;
+using CourseCsharp.Nullable;
 using CourseCsharp.RadianCalculate;
+using CourseCsharp.Vetores;
+using System.Drawing;
 using System.Globalization;
 using System.Net.Http.Headers;
 
-namespace CourseCsharp.Rectangle
+namespace CourseCsharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-           ProductUser user = new ProductUser();
+           VetorUser user = new VetorUser();
 
-            user.ProductShow();
+            user.VetorShow();
         }
 
         
