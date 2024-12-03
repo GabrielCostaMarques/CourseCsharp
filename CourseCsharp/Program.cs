@@ -2,6 +2,7 @@
 
 
 using CourseCsharp.Estoque;
+using CourseCsharp.Hotel;
 using CourseCsharp.Nullable;
 using CourseCsharp.RadianCalculate;
 using CourseCsharp.Vetores;
@@ -15,9 +16,9 @@ namespace CourseCsharp
     {
         static void Main(string[] args)
         {
-           VetorUser user = new VetorUser();
+           HotelUser hotelUser = new HotelUser();
 
-            user.VetorShow();
+            hotelUser.HotelShow();
         }
 
         

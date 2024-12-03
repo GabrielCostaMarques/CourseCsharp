@@ -18,6 +18,7 @@ namespace CourseCsharp.Vetores
 
             for (int i = 0; i < n; i++)
             {
+                string name = Console.ReadLine();
                 vect[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             }
 
@@ -29,7 +30,7 @@ namespace CourseCsharp.Vetores
 
             double avg = sum/n;
 
-            Console.WriteLine("Average Height: "+avg);
+            Console.WriteLine("Average Height: "+avg.ToString("f2"));
         }
     }
 }
