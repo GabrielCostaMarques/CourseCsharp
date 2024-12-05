@@ -1,8 +1,10 @@
 ﻿
 
 
+using CourseCsharp.EmployeeData;
 using CourseCsharp.Estoque;
 using CourseCsharp.Hotel;
+using CourseCsharp.Lists;
 using CourseCsharp.Nullable;
 using CourseCsharp.RadianCalculate;
 using CourseCsharp.Vetores;
@@ -16,9 +18,9 @@ namespace CourseCsharp
     {
         static void Main(string[] args)
         {
-           HotelUser hotelUser = new HotelUser();
+            EmployeeUser emp = new EmployeeUser();
 
-            hotelUser.HotelShow();
+            emp.EmployeeShow();
         }
 
         
