@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace CourseCsharp.EmployeeData
 {
-    internal class EmployeeModal
+    internal class EmployeeModalList
     {
         public int Id {  get; set; }
         public string Name {  get; set; } 
         public double Salary {  get; private set; }
 
-        public EmployeeModal()
+        public EmployeeModalList()
         {
            
         }
 
-        public EmployeeModal(int id, string name, double salary)
+        public EmployeeModalList(int id, string name, double salary)
         {
             Id = id;
             Name = name;

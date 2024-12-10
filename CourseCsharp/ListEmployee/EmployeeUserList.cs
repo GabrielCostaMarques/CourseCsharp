@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace CourseCsharp.EmployeeData
 {
-    internal class EmployeeUser
+    internal class EmployeeUserList
     {
 
         public void EmployeeShow()
         {
-            List<EmployeeModal> employee = new List<EmployeeModal>();
+            List<EmployeeModalList> employee = new List<EmployeeModalList>();
 
 
             Console.Write("How many employess will be registered?");
@@ -35,14 +35,14 @@ namespace CourseCsharp.EmployeeData
                 Console.WriteLine("");
                 Console.WriteLine("-------------------------");
 
-                employee.Add(new EmployeeModal(id, name, salary));
+                employee.Add(new EmployeeModalList(id, name, salary));
             }
 
             Console.Write("Enter the employee id that will have increase: ");
             int chooseId = int.Parse(Console.ReadLine());
 
 
-            EmployeeModal emp = employee.Find(x => x.Id == chooseId);
+            EmployeeModalList emp = employee.Find(x => x.Id == chooseId);
 
             if (emp != null)
             {
@@ -58,7 +58,7 @@ namespace CourseCsharp.EmployeeData
 
             }
                 Console.WriteLine("");
-            foreach (EmployeeModal item in employee)
+            foreach (EmployeeModalList item in employee)
             {
                 Console.WriteLine(item);
             }
