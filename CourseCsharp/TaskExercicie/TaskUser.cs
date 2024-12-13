@@ -31,12 +31,13 @@ namespace CourseCsharp.TaskExercicie
                         listTask.Add(new TaskModal(desc, id));
 
                         Console.WriteLine("");
+                        Console.WriteLine("Task Adicionada com sucesso!");
                         Console.WriteLine("-----------------------");
                         break;
 
                     case 2:
 
-                        Console.WriteLine("Digite o numero da tarefa a concluir: ");
+                        Console.Write("Digite o número da tarefa a concluir: ");
 
                         int op = int.Parse(Console.ReadLine());
 
@@ -45,10 +46,16 @@ namespace CourseCsharp.TaskExercicie
                         if (taskComplete != null)
                         {
                             taskComplete.Done = true;
+                            Console.WriteLine("");
                             Console.WriteLine("Tarefa concluída com sucesso!");
+                            Console.WriteLine("-----------------------");
                         }
-                        else Console.WriteLine("Tarefa nao encontrada");
-
+                        else
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine("Tarefa não encontrada");
+                            Console.WriteLine("-----------------------");
+                        }
 
                         break;
 
@@ -71,6 +78,9 @@ namespace CourseCsharp.TaskExercicie
                             }
                             else
                             {
+                                Console.WriteLine("");
+                                Console.WriteLine("Não foi encontrado nenhuma tarefa concluída");
+                                Console.WriteLine("-----------------------");
                                 return false;
                             }
 
