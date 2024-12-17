@@ -2,6 +2,8 @@
 
 
 using CourseCsharp.EmployeeData;
+using CourseCsharp.FindNumberMatriz;
+using CourseCsharp.Matriz;
 using CourseCsharp.TaskExercicie;
 
 
@@ -11,9 +13,9 @@ namespace CourseCsharp
     {
         static void Main(string[] args)
         {
-            TaskUser task = new TaskUser();
+            FindNumber user = new FindNumber();
 
-            task.TaskShow();
+            user.FindNumberShow();
         }
 
         
