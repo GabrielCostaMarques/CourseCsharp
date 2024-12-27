@@ -1,10 +1,14 @@
 ﻿
 
 
+using CourseCsharp.DateTimeExerc;
+using CourseCsharp.DateTimeOperators;
+using CourseCsharp.DateTimeProprieties;
 using CourseCsharp.EmployeeData;
 using CourseCsharp.FindNumberMatriz;
 using CourseCsharp.Matriz;
 using CourseCsharp.TaskExercicie;
+using CourseCsharp.TimeSpanExerc;
 
 
 namespace CourseCsharp
@@ -13,9 +17,9 @@ namespace CourseCsharp
     {
         static void Main(string[] args)
         {
-            FindNumber user = new FindNumber();
+            OperatorsUser t1 = new OperatorsUser();
 
-            user.FindNumberShow();
+            t1.OperatorsShow();
         }
 
         
