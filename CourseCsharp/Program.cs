@@ -1,14 +1,8 @@
-﻿
+﻿    
 
 
-using CourseCsharp.DateTimeExerc;
 using CourseCsharp.DateTimeOperators;
-using CourseCsharp.DateTimeProprieties;
-using CourseCsharp.EmployeeData;
-using CourseCsharp.FindNumberMatriz;
-using CourseCsharp.Matriz;
-using CourseCsharp.TaskExercicie;
-using CourseCsharp.TimeSpanExerc;
+
 
 
 namespace CourseCsharp
